@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<title>Riak Core + Elixir</title>
+<meta name="author" content="Francisco Krause Arnim"/>
+<style type="text/css">
+.underline { text-decoration: underline; }
+</style>
+<link rel="stylesheet" href="/Users/fran/.emacs.d/.local/straight/build-28.1/revealjs/dist/reveal.css"/>
+
+<link rel="stylesheet" href="/Users/fran/.emacs.d/.local/straight/build-28.1/revealjs/dist/theme/black.css" id="theme"/>
+</head>
+<body>
+<div class="reveal">
+<div class="slides">
+<section id="sec-title-slide">
+<h1 class="title">Riak Core + Elixir</h1><h2 class="author">Francisco Krause Arnim</h2>
+</section>
+<section>
+<section id="slide-1">
+<h2 id="1"><span class="section-number-2">1.</span> Riak + Elixir:</h2>
+
+<div id="org09bafa3" class="figure">
+<p><img src="6nzzij.jpg" alt="6nzzij.jpg" />
+</p>
+</div>
+</section>
+</section>
+<section>
+<section id="slide-2">
+<h2 id="2"><span class="section-number-2">2.</span> Original Objectives:</h2>
+<ul>
+<li>Have an easier time using Riak and Elixir.</li>
+<li>Create a tutorial + use case for Riak that
+it&rsquo;s not a K-V store.</li>
+<li>Let the use case example be a game.</li>
+<li>Have good docs.</li>
+
+</ul>
+<aside class="notes">
+<p>
+The original goal was to have an Easy time to set up Riak and elixir.
+These were actually not bad goals, specially the documentation part as I had to go through a bunch of undocumented issues to make it work with Elixir . Although I had gathered some experience while updating the tutorial for Erlang
+</p>
+
+<p>
+The only weird thing was to make it into a game.
+</p>
+
+</aside>
+</section>
+</section>
+<section>
+<section id="slide-3">
+<h2 id="3"><span class="section-number-2">3.</span> Accomplished Objectives:</h2>
+<ul>
+<li>✅ Have an easier time using Riak and Elixir.</li>
+<li>✅ Create a tutorial + use case for Riak that
+it&rsquo;s not a K-V store.</li>
+<li>❌Let the use case example be a game.</li>
+<li>✅ Have good docs.</li>
+
+</ul>
+<aside class="notes">
+<p>
+I do think that Riax gives an easier time if you want to use Riak.
+</p>
+
+<p>
+Maybe it doesn&rsquo;t go so much in depth over everything Riak has to
+offer, but that&rsquo;s something that, if used,
+in time will get better with more PRs and issues.
+Like any Open Source Project
+</p>
+
+</aside>
+</section>
+</section>
+<section>
+<section id="slide-4">
+<h2 id="4"><span class="section-number-2">4.</span> Easier Time using Riak and Elixir:</h2>
+<ul>
+<li>In principle, using Riak from Elixir shouldn&rsquo;t be that hard right?,
+just download the dep. and follow Erlang&rsquo;s tutorial.</li>
+<li>Well, yes and no.</li>
+<li>Also, you have to setup up a bunch of
+supervisors and a VNode behaviour.</li>
+
+</ul>
+<aside class="notes">
+<p>
+Well, the thing with Riak Core it&rsquo;s that its setup,
+besides our Erlang tutorial, it&rsquo;s not really well documented
+IMHO.
+</p>
+
+<p>
+There are 2, or 3 more tutorials on how to set it up with Erlang
+even Elixir, but they&rsquo;re outdated. Although they did prove useful.
+</p>
+
+<p>
+With Riax, the only thing left to do is to write a VNode
+code and use it, much like you would write a GenServer
+for a simple OTP application.
+</p>
+
+</aside>
+</section>
+</section>
+<section>
+<section id="slide-5">
+<h2 id="5"><span class="section-number-2">5.</span> Tutorial use case:</h2>
+<ul>
+<li>The original idea was a game.</li>
+<li>The final result is serving files
+in distributed way</li>
+
+</ul>
+<aside class="notes">
+nil
+</aside>
+</section>
+</section>
+</div>
+</div>
+<script src="/Users/fran/.emacs.d/.local/straight/build-28.1/revealjs/dist/reveal.js"></script>
+<script src="/Users/fran/.emacs.d/.local/straight/build-28.1/revealjs/plugin/markdown/markdown.js"></script>
+<script src="/Users/fran/.emacs.d/.local/straight/build-28.1/revealjs/plugin/notes/notes.js"></script>
+<script src="/Users/fran/.emacs.d/.local/straight/build-28.1/revealjs/plugin/search/search.js"></script>
+<script src="/Users/fran/.emacs.d/.local/straight/build-28.1/revealjs/plugin/zoom/zoom.js"></script>
+<script>
+// Full list of configuration options available here:
+// https://github.com/hakimel/reveal.js#configuration
+Reveal.initialize({
+
+controls: true,
+progress: true,
+history: false,
+center: true,
+slideNumber: 'c',
+rollingLinks: false,
+keyboard: true,
+mouseWheel: true,
+fragmentInURL: false,
+hashOneBasedIndex: false,
+pdfSeparateFragments: true,
+overview: true,
+
+transition: 'convex',
+transitionSpeed: 'default',
+
+// Plugins with reveal.js 4.x
+plugins: [ RevealMarkdown, RevealNotes, RevealSearch, RevealZoom ],
+
+// Optional libraries used to extend reveal.js
+dependencies: [
+]
+
+});
+</script>
+</body>
+</html>

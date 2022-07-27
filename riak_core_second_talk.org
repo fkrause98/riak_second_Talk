@@ -1,0 +1,57 @@
+#+title: Riak Core + Elixir
+#+EXCLUDE_TAGS: noexport
+#+OPTIONS: toc:nil
+#+OPTIONS: timestamp:nil
+#+OPTIONS: autor:nil
+* Riak + Elixir:
+[[file:6nzzij.jpg]]
+* Original Objectives:
+- Have an easier time using Riak and Elixir.
+- Create a tutorial + use case for Riak that
+  it's not a K-V store.
+- Let the use case example be a game.
+- Have good docs.
+#+begin_notes
+The original goal was to have an Easy time to set up Riak and elixir.
+These were actually not bad goals, specially the documentation part as I had to go through a bunch of undocumented issues to make it work with Elixir . Although I had gathered some experience while updating the tutorial for Erlang
+
+The only weird thing was to make it into a game.
+#+end_notes
+*  Accomplished Objectives:
+- ✅ Have an easier time using Riak and Elixir.
+- ✅ Create a tutorial + use case for Riak that
+    it's not a K-V store.
+- ❌Let the use case example be a game.
+- ✅ Have good docs.
+#+begin_notes
+I do think that Riax gives an easier time if you want to use Riak.
+
+Maybe it doesn't go so much in depth over everything Riak has to
+offer, but that's something that, if used,
+in time will get better with more PRs and issues.
+Like any Open Source Project
+#+end_notes
+*  Easier Time using Riak and Elixir:
+- In principle, using Riak from Elixir shouldn't be that hard right?,
+  just download the dep. and follow Erlang's tutorial.
+- Well, yes and no.
+- Also, you have to setup up a bunch of
+  supervisors and a VNode behaviour.
+#+begin_notes
+Well, the thing with Riak Core it's that its setup,
+besides our Erlang tutorial, it's not really well documented
+IMHO.
+
+There are 2, or 3 more tutorials on how to set it up with Erlang
+even Elixir, but they're outdated. Although they did prove useful.
+
+With Riax, the only thing left to do is to write a VNode
+code and use it, much like you would write a GenServer
+for a simple OTP application.
+#+end_notes
+*  Tutorial use case:
+- The original idea was a game.
+- The final result is serving files
+  in distributed way
+#+begin_notes
+#+end_notes
